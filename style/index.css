@@ -119,13 +119,13 @@ p {
 }
 /*card images*/
 .design{
-    height: 39%;
-    width: 46%;
+    height: 35%;
+    width: 45%;
     border-radius: 60%;
 }
 .code{
-    height: 39%;
-    width: 46%;
+    height: 35%;
+    width: 45%;
     border-radius: 60%;
 }
 /*card header text*/
@@ -167,7 +167,7 @@ p {
 }
 .design-list li{
     text-align:center;
-    margin-right: 15%
+    margin-right: 15%;
 }
 .tools li:hover{
     font-size: 1.25rem;
@@ -302,7 +302,29 @@ button:hover{
         width:15%;
         border-radius: 60%;
     }
-    
+    .design{
+        height: 20%;
+        width: 40%;
+        border-radius: 60%;
+    }
+    .code{
+        height: 20%;
+        width: 40%;
+        border-radius: 60%;
+    }
+    .tools li{
+        list-style-type: none;
+        align-items:center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: .925rem;
+        text-align:center;
+        line-height: 180%;
+        margin:0 auto;
+    }
+    .design-list li{
+        text-align:center;
+        margin-right: 20%;
+    }
     .projects-btn{
         margin: 2% 0 5% 36%;
     } 
