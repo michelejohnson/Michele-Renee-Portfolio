@@ -16,20 +16,27 @@
 
 <body>
     <div class="container">
-        <header>
+        <header class="flex-container">
+<!--Flexbox for navigation-->
             <nav>
-                <div class="animations">
-                    <a href="projects.html">Projects</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
+                <span class="logo">
+                    <p>Michele Renee</p>
+                </span>
+                <div class="links">
+                    <a class="nav-links" href="projects.html">Projects</a>
+                    <a class="nav-links" href="about.html">About</a>
+                    <a class="nav-links" href="contact.html">Contact</a>
                 </div>
             </nav>
+<!--end of flexbox-->
         </header>
     <section class="header-info">
+<!--start of header image and text section-->
         <div class="header-text">
         <img class="header-image" src="images\michele_regallie_avatar.png" alt="cartoon avatar.">
         <h1>Hi! I'm Michele Renee.</h1>
         </div>
+<!--end of header image and text -->
         <h3 class="tagline"> I design, code, and am passionate about creating products that uplift moods.</h3>
         <a href="contact.html"><button class ="contact-btn" type="button">Contact Me</button></a>
     </section>
@@ -70,17 +77,23 @@
     </section>
     <section class="projects">
         <h2> Recent Work </h2>
-        <a href="projects.html">
-            <button class="btn projects-btn" type="button">view more projects</button>
-        </a>
-        <div class="gallery-1">
-            <img class="gallery-img" src="images\Lambda Mobile Dashboard.png" alt="Lambda Mobile Dashboard Project Thumbnail">
-            <img class="gallery-img" src="images\foodreaubanner.png" alt="Foodreau Project Thumbnail">
+        <button class="btn projects-btn" type="button">view more projects</button>
+        <div class="gallery-row">
+<!--flexbox for gallery section, p text will be shown on hover of image-->
+            <div class="column1">
+                <img class="gallery-img" src="images\Lambda Mobile Dashboard.png" alt="Lambda Mobile Dashboard Project Thumbnail">
+                <h3 class="text">Lambda Mobile Dashboard</h3>
+            </div>
+            <div class="column2">
+                <img class="gallery-img" src="images\foodreaubanner.png" alt="Foodreau Project Thumbnail">
+                <h3 class="text">Foodreau</h3>
+            </div>
         </div>
+        <!--text animation section-->
         <div class="gallery-1 gallery-animation">
-            <h3>Coming Soon!</h3>
-            <h3>Coming Soon!</h3>
+            
         </div>
+        <!--end of animation-->
         <div class="gallery-2">
             <img class="gallery-img2" src="images\QFTBbanner.png" alt="Quest for the Best Project Thumbnail.">
         </div>
