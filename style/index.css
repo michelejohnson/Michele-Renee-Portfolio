@@ -19,6 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,8 +62,44 @@ header {
     transition: 0.6s;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
   }
 /* Link Hover Effects */
+.color-select {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  .color-select:before{
+      background: rgb(206, 210, 253, 100%);
+  }
+.select{
+    min-width: 100px;
+	height: 30px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.select:before{
+    width: 80px;
+	height: 10px;
+	content: '';
+	position: absolute;
+	transform: translateY(10px);
+	transition: 500ms;
+	z-index: -1;
+}
+.select:hover:before {
+    height: 30px;
+	transform: translateY(0px);
+}
+
+.select:hover {
+	color: white;
+}
 
 
 .header-info{
@@ -259,7 +296,9 @@ footer p{
 }
 .footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
 }
 
 button{
