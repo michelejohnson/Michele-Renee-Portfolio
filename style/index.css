@@ -14,6 +14,12 @@ body{
 h1, h2, h3{
     font-family: 'Rubik', sans-serif;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
 header {
     position: fixed;
     top: 0;
@@ -127,7 +133,9 @@ h1{
     font-size: 1.5625rem;
     padding: 5%;
 }
-
+p.scroll-cta{
+    scroll-behavior: smooth;
+}
 /*the start of the body styles*/
 section{
     /*border:1px solid black;*/
@@ -142,11 +150,36 @@ p {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-
-/*Skills Section*/
-.skills-section{
-    background-color:rgb(206, 210, 253, 60%);
+/* About Section */
+#about{
+    background-color: rgb(206, 210, 253, 60%);
+    margin-top: 2%;
+    padding: 5%;
 }
+.about-info h2{
+    margin-top: 5%;
+    text-align: center;
+}
+.about-text{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2%;
+}
+.text-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    text-align: center;
+    width: 45%;
+}
+.connect-btn{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Skills Section*/
+
 .skills{
     display: flex;
     justify-content:space-between;
@@ -212,80 +245,59 @@ p {
 
 /* Gallery Section*/
 .projects{
-    margin:2%;
+    background-color: rgb(206, 210, 253, 60%);
 }
 .projects-btn{
     margin: 2% 0 5% 42.5%;
 }
-.gallery-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-.column1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-}
 
-.gallery-img{
-    height: auto;
-    width:37vw;
-    border-radius: 1em;
+.top-gallery-index{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap:wrap; */
+    width: 100%;
+    margin-bottom: 10%;
 }
-.text{
+img{
+    height: auto;
+    width:25vw;
+    border-radius: 2em;
+}
+.gallery{
+    width:30%;
+}
+.gallery a{
+    text-decoration: none;
+}
+.img1{
+    padding: 2%;
+    text-align: center;
+    
+}
+.img2{
+    padding: 2%;
     text-align: center;
 }
-.text:hover{
-    text-transform: uppercase;
+.img3{
+    padding: 2%;
+    text-align: center;
 }
-.column2{
-    display: flex;
-    flex-direction: column;
+/* .project-button{
+    padding: 2%;
+} */
+.project-button p{
+    text-align:center;
 }
-
-/* animation style taken from:https://thoughtbot.com/blog/css-animation-for-beginners*/
-@keyframes bounceIn {
-    0% {
-      transform: scale(0.1);
-      opacity: 0;
-    }
-    60% {
-      transform: scale(1.2);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .gallery-animation{
-    animation-delay:4s;
-    animation-duration: 2s;
-    animation-name: bounceIn;
-    animation-timing-function: ease-in;
-  }
-.gallery-2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-.gallery-img2{
-    height: 60vh;
-    width: 90%;
-    border-radius: 1em;
-    object-fit: cover;
-}
-
 /*Footer Section
 button styling taken from: https://codepen.io/atloomer/pen/JEaRWX?editors=1100 */
-footer {
+/* footer {
     padding: 2%;
     margin: 0 auto;
     background-color:rgb(206, 210, 253, 60%);
     width:100%;
-}
+} */
+
 footer p{
     padding: 3%;
     margin-top:1%;
