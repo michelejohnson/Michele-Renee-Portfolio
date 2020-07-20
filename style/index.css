@@ -297,7 +297,9 @@ button styling taken from: https://codepen.io/atloomer/pen/JEaRWX?editors=1100 *
     background-color:rgb(206, 210, 253, 60%);
     width:100%;
 } */
-
+footer{
+    margin-bottom: 2%;
+}
 footer p{
     padding: 3%;
     margin-top:1%;
