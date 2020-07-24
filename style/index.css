@@ -178,6 +178,9 @@ p {
     margin-top: 5%;
     text-align: center;
 }
+.about-photo{
+    width: 30%;
+}
 .about-text{
     display: flex;
     justify-content: space-evenly;
@@ -189,7 +192,7 @@ p {
     flex-direction: column;
     justify-content: center;
     padding: 2%;
-    text-align: center;
+    /* text-align: center; */
     width: 45%;
 }
 .connect-btn{
@@ -290,7 +293,7 @@ p {
 }
 
 .button:visited{
-    color: white;
+    color: black;
 }
 
 /* Gallery Section*/
@@ -313,7 +316,7 @@ p {
 }
 img{
     height: auto;
-    width:25vw;
+    width:100%;
     border-radius: 2em;
 }
 .gallery{
@@ -331,7 +334,7 @@ img{
     
 }
 .img2{
-    padding: 2%;
+    /* padding: 2%; */
     text-align: center;
 }
 .img3{
@@ -340,6 +343,12 @@ img{
 }
 p.description{
    padding-bottom: 2%;
+   width: 60%;
+   margin-left: 20%;
+   text-align: center;
+}
+p.title{
+    text-align: center;
 }
 /* .project-button{
     padding: 2%;
