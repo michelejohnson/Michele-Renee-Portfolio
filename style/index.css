@@ -148,7 +148,12 @@ div.learn{
     width: 100%;
     text-align:center;
 }
+img.down{
+    width: 60px;
+    height:60px;
+    border-radius: 30em;
 
+}
 
 /*the start of the body styles*/
 
