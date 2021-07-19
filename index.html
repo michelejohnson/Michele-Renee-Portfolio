@@ -4,38 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/index.css">
-    <title>Document</title>
-    <!--what is needed:
-        1. navigation bar with About, Projects, and Contact (links)
-        2. Gallery of projects using flexbox
-        3. Info in the about (or placeholder text)
-        4. A 'my projects' button that links to page
-        5. A 'contact me button that links to page
-        6. social media links in the footer section-->
+    <link rel="stylesheet" type="text/css" href="style\fontawesome.css">
+    <script src="https://kit.fontawesome.com/d7e5f0575b.js" crossorigin="anonymous"></script>
+    <title>Michele Renee</title>
+    
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <nav>
-                <div class="animations">
-                    <a href="projects.html" target="_blank">Projects</a>
-                    <a href="about.html" target="_blank">About</a>
-                    <a href="contact.html" target="_blank">Contact</a>
-                </div>
-            </nav>
+        <header class="flex-container">
+<!--Flexbox for navigation-->
+<header>
+    <a href="index.html" class="logo">Michele Renee</a>
+    <ul>
+      <li><a href="index.html" class="color-select select">Home</a></li>
+      <li><a href="projects.html" class="color-select select">Projects</a></li>
+      <li><a href="contact.html" class="color-select select">Contact</a></li>
+      <!-- <li><a href="play.html" class="color-select select">Play</a></li> -->
+      <!-- <li><a href="Blog\blog.html" class="color-select select">Blog</a></li> -->
+    </ul>
+  </header>
+<!--end of flexbox-->
         </header>
     <section class="header-info">
+<!--start of header image and text section-->
+
         <div class="header-text">
         <img class="header-image" src="images\michele_regallie_avatar.png" alt="cartoon avatar.">
         <h1>Hi! I'm Michele Renee.</h1>
         </div>
-        <h3 class="tagline"> I design, code, and am passionate about creating products that uplift moods.</h3>
-        <a href="contact.html"><button class ="contact-btn" type="button">Contact Me</button></a>
+
+<!--end of header image and text -->
+        <h3 class="tagline"> I am a SF Bay Area based Designer and Developer who is passionate about merging design & development with social innovation.</h3>
+        <a href="#about">
+            <img class="down" src="images\Drop Down.png" alt="chevron down icon">
+        </a>
     </section>
+
+
+    <section id="about" class="about-info">
+
+        <h2>About Me</h2>
+
+        <div class="about-text">
+        <img class="about-photo" src="images\header image -1.png" alt="Profile Photo.">
+
+        <div class="text-column">
+            <p>I am a early stage UX Designer and Front End Developer living in the San Francisco Bay Area, CA</p>
+            <p>I graduated in 2016 with a B.A. in Art History from California State University East Bay and have been on a path of creating stories with design. 
+                Since starting Lambda School UX Design program in July 2019, I have been immersed in designing and coding for the web.</p>
+            <h3>When I'm not designing and coding, I am:</h3>
+            <li>Blogging</li>
+            <li>Playing Video Games (mostly Stardew Valley or Animal Crossing New Horizons)</li>
+            <li>Practicing Mobile Photography</li>
+            <li>Playing a Foodie at Hole-in-the-Wall Restaurants in the San Francisco Bay Area</li>
+            
+        </div>
+    </div>
+
+
+        <div class="connect-btn">
+            <div class="button-container prj-btn">
+                <a href="contact.html" class="projects-btn btn button"> 
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+
     <section class="skills-section">
+
         <h2> Skills</h2>
+
         <div class="skills">
+
             <div class="design-skills card">
                 <img class="design" src="images\design-image.png" alt="Design Icon.">
                 <h3 class="skills-header">Design.</h3>
@@ -51,12 +96,14 @@
                     <li>UI Design</li>
                 </ul>
             </div>
+
+
             <div class="coding-skills card">
                 <img class="code" src="images\code-image.png" alt="Coding Icon.">
                 <h3 class="skills-header">Code.</h3>
                 <p>I love bringing designs to life by coding from scratch. </p>
                 <p>Tools & Coding languages I utilize are:</p>
-                <ul class="tools">
+                <ul class="tools design-list">
                     <li>VS Code</li>
                     <li>Codepen</li>
                     <li>Github</li>
@@ -66,40 +113,83 @@
                     <li>Javascript</li>
                 </ul>
             </div>
-        </div>
+
+
+        </div>  
+
     </section>
+
     <section class="projects">
-        <h2> Recent Work </h2>
-        <button class="btn projects-btn" type="button">view more projects</button>
-        <div class="gallery-1">
-            <img class="gallery-img" src="images\Lambda Mobile Dashboard.png" alt="Lambda Mobile Dashboard Project Thumbnail">
-            <img class="gallery-img" src="images\foodreaubanner.png" alt="Foodreau Project Thumbnail">
+
+        <div class="project-button">  
+            <h2> Recent Work </h2>
+            <div class="button-container prj-btn">
+                <a href="projects.html" class="projects-btn btn button"> 
+                    View More Projects
+                </a>
+            </div>
         </div>
-        <div class="gallery-1 gallery-animation">
-            <h3>Coming Soon!</h3>
-            <h3>Coming Soon!</h3>
+
+
+        <div class="image-gallery">
+
+            <section class="top-gallery-index">
+            <div class="img1 gallery">
+                <img src="images\Lambda Mobile Dashboard.png" alt=''>
+                <p class="title">Lambda School Dashboard</p>
+                <p class="description">A mobile school dashboard for Lambda School students. </p>
+                <div class="button-container">
+                    <a href="Project-individual\project1.html" class="projects-btn btn button"> 
+                        Explore Project
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="img2 gallery">
+                <img src="images\foodreaubanner.png" alt=''>
+                <p class="title">Foodreau</p>
+                <p class="description">A recipe sharing web app for families.</p>
+                <div class="button-container">
+                    <a href="#" class="projects-btn btn button"> 
+                        Coming Soon!
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="img3 gallery">
+                <img src="images\QFTBbanner.png" alt=''>
+                <p class="title">Quest for the Best</p>
+                <p class="description">A mobile experience treasure hunt around your city.</p>
+                <div class="button-container">
+                    <a href="#" class="projects-btn btn button"> 
+                        Coming Soon!
+                    </a>
+                </div>
+            </div>
+
         </div>
-        <div class="gallery-2">
-            <img class="gallery-img2" src="images\QFTBbanner.png" alt="Quest for the Best Project Thumbnail.">
-        </div>
-        <div class="gallery-2 gallery-animation">
-            <h3>Coming Soon!</h3>
-        </div>
+
     </section>
-    <footer>
-        <p> @Michele Renee 2020</p>
-        <div class="footer">
-            <a href="https://twitter.com/micheleregallie">
-                <button class="footer-btn btn" type="button">Twitter</button>
-            </a>
-            <a href="https://www.linkedin.com/in/micheleregallie/">
-                <button class="footer-btn btn" type="button">Linkedin</button>
-            </a>
-            <a href="https://dribbble.com/micheleregallie" class="footer-btn btn" >
-                <button class="footer-btn btn" type="button">Dribbble</button>
-            </a>
+
+        <footer>
+            <p> All Rights Reserved @ Michele Renee Design 2020</p>
+            <div class="footer">
+                <a href="https://twitter.com/micheleregallie">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/micheleregallie/">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a href="https://dribbble.com/micheleregallie" class="footer-btn btn" >
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </footer>
+
+
         </div>
-    </footer>
-    </div>
+        <script type="index.js"></script>
 </body>
 </html>
