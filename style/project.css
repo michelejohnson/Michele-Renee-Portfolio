@@ -20,7 +20,7 @@ a{
     /* flex-wrap:wrap; */
     width: 100%;
 }
-.bottom-gallery{
+.project-gallery{
     display:flex;
     flex-direction: row;
     justify-content: center;
